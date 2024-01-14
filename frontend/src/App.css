@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100vh; */
+  margin-top: 10vh;
+}
+.App form{
+  padding-top: 5vh;
+}
+input {
+  padding: 0.4rem;
+  border-radius: .3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+form button{
+  padding: .4rem;
+  border-radius: .3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.todo{
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li{
+  list-style: none;
+  font-size: 1.2rem;
+  padding: .3rem;
+  display: flex;
+  justify-content: center;
+}
+ul{
+  display: flex;
+  flex-direction:column;
+  padding: .2rem;
+}
+ul li button{
+  margin-inline: 1rem;
+}
+li a{
+  color: black;
+  margin-left: 1rem;
+  text-decoration: none;
+  background-color:rgba(193, 193, 193, 0.612);
+  padding: .2rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+}
+.btns{
+  display: flex;
+  margin-left: 5rem;
+}
+li button{
+  color: black;
+  margin-left: 1rem;
+  text-decoration: none;
+  background-color:rgba(193, 193, 193, 0.612);
+  padding: .2rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+  border: none;
+}
