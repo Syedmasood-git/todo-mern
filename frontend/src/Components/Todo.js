@@ -6,7 +6,7 @@ function Todo() {
   const [allTodos,setAllTodos] = useState([])
 
   useEffect(()=>{
-    axios.get(`http://localhost:4000/api/get/todos/`)
+    axios.get(`https://todo-mern-kelu.onrender.com/api/get/todos/`)
     .then(response=>setAllTodos(response.data))
     .catch(err=>console.log(err))
   },[])
@@ -14,7 +14,7 @@ function Todo() {
   const addTodo = (e)=>{
     e.preventDefault();
     if(task!==''){
-        axios.post(`http://localhost:4000/api/add/todos/`,{task})
+        axios.post(`https://todo-mern-kelu.onrender.com/api/add/todos/`,{task})
         .then(response=>{
             setAllTodos([...allTodos,response.data])
             setTask('')
@@ -23,7 +23,7 @@ function Todo() {
     }
   }
   const handleDelete =(id)=>{
-    axios.delete(`http://localhost:4000/api/delete/todos/${id}`)
+    axios.delete(`https://todo-mern-kelu.onrender.com/api/delete/todos/${id}`)
     .then(res=>{
         setAllTodos(allTodos.filter(todo=>todo._id !== id))
     })
