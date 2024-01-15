@@ -15,7 +15,7 @@ const Update = () => {
     const handleUpdate=(e,id)=>{
         e.preventDefault()
         if(task!==''){
-            axios.put(`${BASE_URL}/api/update/todos/${id}`,{task})
+            axios.put(`http://localhost:4000/api/update/todos/${id}`,{task})
         .then(res=>{
             setAllTodos(res.data)
             navigate('/')
